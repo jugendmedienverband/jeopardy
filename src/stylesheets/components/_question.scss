@@ -1,5 +1,5 @@
 .question {
-  background-color: #fff;
+ background-color: #fff;
   bottom: 0;
   display: flex;
   flex-direction: column;
@@ -10,10 +10,11 @@
 }
 
 .question__category {
-  background-color: #efefef;
-  font-size: 1.4rem;
+background-color: #46a1df;
+//  background-color: #efefef;
+  font-size: 2rem;
   font-weight: bold;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   padding: 2rem;
   text-transform: uppercase;
 }

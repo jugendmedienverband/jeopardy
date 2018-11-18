@@ -5,21 +5,19 @@
 ## Install
 
 ```bash
-yarn install
+npm install
 ```
 
 ## Edit game
-
 See `src/game.js` for game data.
 
 ## Start a game
 
 ```bash
-yarn run game
+npm start
 ```
 
 ## Short cuts
-
 * `t`: Enable or disable player input by Buzzer
 * `r`: Select a random player
 * `shift+r`: Deselect current player

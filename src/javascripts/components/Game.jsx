@@ -41,6 +41,10 @@ export default class Game extends Component {
       this.setState({ openForInput: !this.state.openForInput });
     });
 
+    Mousetrap.bind('shift+x', () => {
+      localStorage.clear(); 
+    });
+
     // Allow moderator to show/hide bonus category
     Mousetrap.bind('b', () => {
       this.setState({ showBounsCategory: !this.state.showBounsCategory });
@@ -238,6 +242,7 @@ export default class Game extends Component {
   onWrongAnswer(question) {
     const currentPlayer = this.currentPlayer();
     const { dailyDoubleValue } = this.state;
+    soundManager.play('wrong');
 
     this.setPlayerState(currentPlayer.key, {
       score: currentPlayer.score - (dailyDoubleValue || question.value),
@@ -278,6 +283,8 @@ export default class Game extends Component {
   onCorrectAnswer(question) {
     const currentPlayer = this.currentPlayer();
     const { dailyDoubleValue } = this.state;
+    soundManager.play('right');
+
 
     this.setPlayerState(currentPlayer.key, {
       score: currentPlayer.score + (dailyDoubleValue || question.value),

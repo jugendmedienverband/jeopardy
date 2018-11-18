@@ -6,12 +6,17 @@
 }
 
 .game__title {
-  background-color: #efefef;
-  font-size: 1.4rem;
+//  background-color: #46a1df;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  color: #d32f2f;
+  font-size: 2 rem;
   font-weight: bold;
-  line-height: 1.5rem;
+  line-height: 2.5 rem;
   padding: 2rem;
   text-transform: uppercase;
+  min-height: 20px;
 }
 
 .game__buzzer-status {

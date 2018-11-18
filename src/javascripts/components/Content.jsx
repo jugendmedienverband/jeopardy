@@ -11,6 +11,8 @@ export default class Content extends Component {
         return <img src={content} className='content' />;
       case 'video':
         return <video src={content} autoPlay={true} className='content' controls={true} />;
+      case 'audio':
+        return <audio src={content} controls={true} className='content' />;
       default:
         return <Fragment>Unbekannter Typ</Fragment>;
     }

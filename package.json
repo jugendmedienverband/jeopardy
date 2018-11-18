@@ -4,10 +4,19 @@
   "description": "A jeopardy game written in React",
   "main": "src/index.js",
   "repository": "https://github.com/gglnx/jeopardy",
-  "author": "Dennis Morhardt <info@dennismorhardt.de>",
+  "author": "Dennis Morhardt <info@dennismorhardt.de>, extended by the JMMV",
   "license": "MIT",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
   "scripts": {
-    "game": "parcel src/game.pug"
+    "start": "parcel src/game.pug"
   },
   "dependencies": {
     "classnames": "^2.2.5",
@@ -21,9 +30,12 @@
     "soundmanager2": "^2.97.20170602"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
     "@namics/stylelint-bem": "^5.1.0",
     "autoprefixer": "^8.5.0",
-    "babel-core": "^6.26.3",
+    "babel-core": "^7.0.0-0",
     "babel-eslint": "^8.2.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -34,7 +46,7 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-react": "^7.8.2",
     "node-sass": "^4.9.0",
-    "parcel-bundler": "^1.8.1",
+    "parcel-bundler": "^1.10.3",
     "postcss-import": "^11.1.0",
     "pug": "^2.0.3",
     "pug-lint": "^2.5.0",

@@ -70,6 +70,7 @@ export default class Question extends Component {
             onNoAnswer(question);
           }} disabled={dailyDoubleValue}>Keine Antwort</button>
           <button className='button button--green' onClick={() => {
+	    
             onCorrectAnswer(question);
           }} disabled={!currentPlayer}>Richtig</button>
         </div>
